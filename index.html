@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScrollKeep — Quit the reflex, not the phone</title>
+<style>
+  :root { --bg:#f0e3c9; --card:#f7eedb; --ink:#3d3222; --muted:#6b5a45; --accent:#1f6f8c; --accent2:#f29e38; --line:#e2d3b6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  header { text-align:center; padding:40px 0 16px; }
+  .logo { width:88px; height:88px; border-radius:22px; display:inline-block; overflow:hidden;
+          background:linear-gradient(180deg,#c9c5de 0%,#fbd9b6 48%,#2c7ba0 50%,#7ac7c8 72%,#f0e3c9 74%); position:relative; }
+  .logo span { position:absolute; left:26px; top:26px; width:36px; height:36px; border-radius:50%; background:#f7a73a; clip-path:inset(0 0 50% 0); }
+  h1 { margin:16px 0 4px; font-size:32px; font-family:Georgia,"Times New Roman",serif; }
+  .tag { color:var(--muted); margin:0 0 8px; font-style:italic; font-family:Georgia,serif; }
+  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; font-family:Georgia,serif; }
+  a { color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin-top:18px; }
+  .muted { color:var(--muted); font-size:14px; }
+  ul { padding-left:20px; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><span></span></div>
+    <h1>ScrollKeep</h1>
+    <p class="tag">Quit the reflex, not the phone.</p>
+  </header>
+
+  <p>ScrollKeep is a companion for people who want to stop doomscrolling. Each morning you make a pledge: which apps stay shut, and until when. ScrollKeep shields them with Apple's Screen Time. Each reach for the phone you don't open leaves a shell on the sand. When the pull is strong, you sit a moment on the log. Each night you close the day and leave the phone on the sand. Everything stays on your iPhone: no account, no ads, no server.</p>
+
+  <h2 id="support">Support</h2>
+  <div class="card">
+    <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
+    <p>Email: <a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a></p>
+    <p class="muted">I'm a solo developer and read every message. Please allow a couple of days for a reply.</p>
+  </div>
+  <div class="card">
+    <strong>Common questions</strong>
+    <ul>
+      <li><strong>The shield isn't appearing.</strong> ScrollKeep needs Screen Time access: Settings › Screen Time › Apps with Screen Time Access › ScrollKeep. Then make this morning's pledge; the shore is only shielded under a pledge.</li>
+      <li><strong>I can't open an app I need.</strong> Tap "Open anyway" on the shield for a timed break, or close the day from the Today screen. Apple always lets you turn Screen Time access off in Settings.</li>
+      <li><strong>Which apps did I pick?</strong> Apple never tells ScrollKeep the names of the apps you choose, only you can see them in the picker. That is why you name each vice yourself.</li>
+      <li><strong>Plus and subscriptions.</strong> The pledge, the shield, the SOS and the shells are free. Plus (yearly with a free week, monthly, or lifetime) adds unlimited vices, hold-me-to-it pledges, and reach history beyond seven days. Manage or cancel from the Settings app › your Apple Account › Subscriptions.</li>
+    </ul>
+  </div>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <div class="card">
+    <p class="muted">Last updated: September 19, 2026</p>
+    <p><strong>ScrollKeep does not collect, transmit, sell, or share any of your data.</strong> There is no account, no login, and no server.</p>
+    <p><strong>What we collect:</strong> Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests of its own. Because there is no backend, your data physically cannot reach us.</p>
+    <p><strong>Screen Time:</strong> ScrollKeep uses Apple's Screen Time framework (Family Controls) to shield the apps and websites you choose. Your choices are stored by Apple as opaque tokens that ScrollKeep cannot read, name, or export; they never leave your device. ScrollKeep does not read your usage history; the only records it keeps are the pledges, reaches, and notes you make in the app, on your device.</p>
+    <p><strong>Where your data lives:</strong> Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it.</p>
+    <p><strong>Notifications:</strong> If enabled, the morning and evening reminders are scheduled locally on your device and are not sent through any server.</p>
+    <p><strong>Your person:</strong> If you add a contact for the SOS, the name and number stay on your device; a tap opens Messages with a blank text, and nothing is ever sent without you.</p>
+    <p><strong>In-app purchases:</strong> ScrollKeep Plus (yearly, monthly, or lifetime) is handled entirely by Apple's App Store. ScrollKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
+    <p><strong>Children:</strong> ScrollKeep does not knowingly collect information from anyone, including children.</p>
+    <p class="muted">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
+    <p><strong>Contact:</strong> <a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a></p>
+  </div>
+
+  <p class="muted" style="margin-top:24px">ScrollKeep is a personal companion. It is not a medical device, does not provide medical advice, diagnosis, or treatment, and is not a substitute for professional help.</p>
+
+  <footer>© 2026 Nick Minieri · ScrollKeep</footer>
+</div>
+</body>
+</html>
