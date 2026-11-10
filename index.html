@@ -1,85 +1,145 @@
+---
+title: "ScrollKeep: stop doomscrolling, on iPhone"
+description: "ScrollKeep is an iPhone app to stop doomscrolling: a Do Not Disturb sign that shuts the apps you pick until tonight. No account, no ads, no data collected."
+image: /icon.png
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ScrollKeep — The sign on your door</title>
-<style>
-  :root { --bg:#f7f5ed; --card:#ffffff; --ink:#17171a; --muted:#6b6b68; --accent:#b8650a; --accent2:#ff9e29; --line:#e6e3da; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         background:var(--bg); color:var(--ink); line-height:1.6; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  header { text-align:center; padding:40px 0 16px; }
-  .logo { width:88px; height:88px; border-radius:22px; display:inline-block; background:#17171a; position:relative; }
-  .logo span { position:absolute; left:30px; top:14px; width:28px; height:60px; border-radius:10px; background:#000; }
-  .logo span::after { content:""; position:absolute; left:3px; top:3px; width:22px; height:27px; border-radius:7px; background:#5a5a5e; border-top:3px solid #ff9e29; }
-  h1 { margin:16px 0 4px; font-size:32px; font-weight:800; }
-  .tag { color:var(--muted); margin:0 0 8px; }
-  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; }
-  a { color:var(--accent); }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin-top:18px; }
-  .muted { color:var(--muted); font-size:14px; }
-  ul { padding-left:20px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
-</style>
+<title>ScrollKeep: stop doomscrolling, on iPhone</title>
+<meta name="apple-itunes-app" content="app-id=6813714616">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "ScrollKeep",
+  "alternateName": "ScrollKeep: Stop Doomscrolling",
+  "description": "An iPhone app to stop doomscrolling: a Do Not Disturb sign that shuts the apps you pick until tonight with Apple's Screen Time, and counts every reach you don't open. No account, no ads, no data collected.",
+  "url": "https://nickminieri.github.io/scrollkeep/",
+  "installUrl": "https://apps.apple.com/app/id6813714616",
+  "image": "https://nickminieri.github.io/scrollkeep/icon.png",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": [
+    "en",
+    "de"
+  ],
+  "fileSize": "41.2 MB",
+  "contentRating": "4+",
+  "datePublished": "2026-10-10",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to try. Optional ScrollKeep Plus: $19.99 a year after a free week, $4.99 a month, or $49.99 once."
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Nick Minieri"
+  },
+  "sameAs": "https://apps.apple.com/app/id6813714616"
+}
+</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo"><span></span></div>
-    <h1>ScrollKeep</h1>
-    <p class="tag">The Do Not Disturb sign you hang on your own door.</p>
-  </header>
-
-  <p>ScrollKeep is an iPhone app to stop doomscrolling: it shuts TikTok, Instagram, Reels, Shorts, or any feed you pick from morning until tonight with Apple's Screen Time shield, and counts every reach you don't open. It is the Do Not Disturb sign you hang on your own door. Hang it in the morning and the apps you name, the feed, the shorts, bed scrolling, are shut until tonight, shielded by Apple's Screen Time. Reach for one and the sign is there: not now, or open it anyway for a few minutes. Every reach you don't open is a pencil mark on the sign. When the pull is strong, you sit a moment. Take the sign down at night to close the day. Everything stays on your iPhone: no account, no ads, no server.</p>
-
-  <h2 id="about">About ScrollKeep</h2>
-  <div class="card">
-<p><strong>What it is:</strong> A sign for your door: shut the apps you doomscroll with Apple's Screen Time shield, hang it in the morning, count every reach you didn't open, and read a finite deck of things worth knowing instead.</p>
-<p><strong>The evidence behind the pause:</strong> ScrollKeep's door works like the pause studied by Grüning, Riedel and Lorenz-Spreen (PNAS, 2023, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9974409">open access</a>): with a short pause before a distracting app opened, 36% of attempted opens were abandoned, and attempts fell by 37% over six weeks.</p>
-<p><strong>Who it is for:</strong> Anyone who wants to stop doomscrolling without deleting their apps.</p>
-<p><strong>Price:</strong> Free to try. Plus is $19.99 a year with a 7-day trial, $4.99 a month, or $49.99 once for life. No ads.</p>
-<p><strong>Privacy:</strong> No account, no analytics, no data collected. Everything stays on your iPhone. Works offline.</p>
-<p><strong>Platform and languages:</strong> iPhone (iOS 17 or later). English and German.</p>
-<p><strong>Made by:</strong> Nick Minieri, one person in the United States.</p>
+<div class="sky">
+  <div class="hero">
+    <div>
+      <a class="brand" href="./"><img src="icon.png" alt="ScrollKeep app icon" width="44" height="44">ScrollKeep</a>
+      <h1>Shut until<br>tonight.</h1>
+      <p class="sub">The Do Not Disturb sign you hang on your own door.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6813714616"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
+      <p class="small">Free to try. No account. No ads.</p>
+    </div>
+    <img class="phone" src="img/shut.webp" alt="ScrollKeep with the sign up: Do Not Disturb, the feed and bed scrolling, until 9 PM" width="720" height="1469">
   </div>
+</div>
+
+<main>
+  <p class="lede" id="about">ScrollKeep is an iPhone app to stop doomscrolling. It is a Do Not Disturb sign you hang on your own door.</p>
+  <p>Hang it in the morning and the apps you name are shut until tonight, shielded by Apple's Screen Time. Reach for one and the sign is there: not now, or open it anyway for a few minutes. Every reach you don't open is a pencil mark on the sign. In the evening there is a short deck of things worth knowing, and it ends on purpose.</p>
+</main>
+
+<div class="three">
+  <figure>
+    <img src="img/open.webp" alt="The morning: drag the sign up to hang it" width="720" height="1469" loading="lazy">
+    <h3 class="big">Hang it in the morning.</h3>
+  </figure>
+  <figure>
+    <img src="img/doorway.webp" alt="The shield over a shut app: Not now, or Open anyway" width="720" height="1469" loading="lazy">
+    <h3 class="big">Reach, and the sign is there.</h3>
+  </figure>
+  <figure>
+    <img src="img/reaches.webp" alt="Reaches: hours shut this week and the reaches you did not open" width="720" height="1469" loading="lazy">
+    <h3 class="big">Every reach you didn't open.</h3>
+  </figure>
+</div>
+
+<main>
+  <h2 id="facts">The details</h2>
+  <dl class="facts">
+    <dt>Price</dt><dd>Free to try. Plus is optional: $19.99 a year after a free week, $4.99 a month, or $49.99 once (US prices).</dd>
+    <dt>Ads</dt><dd>None</dd>
+    <dt>Account</dt><dd>None. No sign-up, no server.</dd>
+    <dt>Privacy label</dt><dd>Data Not Collected</dd>
+    <dt>Works offline</dt><dd>Yes</dd>
+    <dt>Needs</dt><dd>An iPhone with iOS 17.0 or later, with Screen Time access.</dd>
+    <dt>Size</dt><dd>41.2 MB</dd>
+    <dt>Languages</dt><dd>English, German</dd>
+    <dt>Category</dt><dd>Health &amp; Fitness</dd>
+    <dt>Age rating</dt><dd>4+</dd>
+    <dt>First released</dt><dd>October 10, 2026</dd>
+    <dt>On the App Store as</dt><dd><a href="https://apps.apple.com/app/id6813714616">ScrollKeep: Stop Doomscrolling</a></dd>
+    <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+  </dl>
+  <p class="soft" style="margin-top:12px">Checked against the App Store listing on November 10, 2026.</p>
+
+  <h2 id="research">The research behind it</h2>
+  <p>ScrollKeep's door works like a pause that has been tested. In a six-week field study of 280 people, a short pause before a distracting app opened led them to close the app again 36% of the time, and by the last week they tried to open those apps 37% less than in the first (<a href="https://doi.org/10.1073/pnas.2213114120">Grüning, Riedel and Lorenz-Spreen, PNAS, 2023</a>).</p>
+  <p><span class="soft">That study tested the pause in another app, one sec, not in ScrollKeep.</span></p>
 
   <h2 id="support">Support</h2>
-  <div class="card">
-    <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
-    <p>Email: <a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a></p>
-    <p class="muted">I'm a solo developer and read every message. Please allow a couple of days for a reply.</p>
-  </div>
-  <div class="card">
-    <strong>Common questions</strong>
+<p>Found a bug, or want something added? Email me at <a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a>. I make ScrollKeep on my own and read every message. Give me a couple of days to reply.</p>
+<h3>Common questions</h3>
     <ul>
       <li><strong>The door isn't appearing.</strong> ScrollKeep needs Screen Time access: Settings › Screen Time › Apps with Screen Time Access › ScrollKeep. Then hang the sign; apps are only shut while it's up.</li>
       <li><strong>I can't open an app I need.</strong> Tap "Open anyway" on the sign for a five-minute break, or take the sign down to close the day. Apple always lets you turn Screen Time access off in Settings.</li>
       <li><strong>Which apps did I pick?</strong> Apple never tells ScrollKeep the names of the apps you choose, only you can see them in the picker. That is why you name each vice yourself.</li>
       <li><strong>Plus and subscriptions.</strong> The sign, the door, the count, the cards and the SOS are free. Plus (yearly with a free week, monthly, or once for life) hangs the sign for you each morning, locks it until tonight, takes every vice, and keeps every month. Manage or cancel from the Settings app › your Apple Account › Subscriptions.</li>
     </ul>
-  </div>
 
   <h2 id="privacy">Privacy Policy</h2>
-  <div class="card">
-    <p class="muted">Last updated: October 1, 2026</p>
-    <p><strong>ScrollKeep does not collect, transmit, sell, or share any of your data.</strong> There is no account, no login, and no server.</p>
-    <p><strong>What we collect:</strong> Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests of its own. Because there is no backend, your data physically cannot reach us.</p>
-    <p><strong>Screen Time:</strong> ScrollKeep uses Apple's Screen Time framework (Family Controls) to shield the apps and websites you choose. Your choices are stored by Apple as opaque tokens that ScrollKeep cannot read, name, or export; they never leave your device. ScrollKeep does not read your usage history; the only records it keeps are the pledges, reaches, and notes you make in the app, on your device.</p>
-    <p><strong>Where your data lives:</strong> Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it.</p>
-    <p><strong>Notifications:</strong> If enabled, the morning and evening reminders are scheduled locally on your device and are not sent through any server.</p>
-    <p><strong>Face ID and the app lock:</strong> ScrollKeep does not collect, access, store, or share face data. The optional app lock (in ScrollKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells ScrollKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; ScrollKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in ScrollKeep's Settings, or switch off Face ID for ScrollKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because ScrollKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
-    <p><strong>Your person:</strong> If you add a contact for the SOS, the name and number stay on your device; a tap opens Messages with a blank text, and nothing is ever sent without you.</p>
-    <p><strong>In-app purchases:</strong> ScrollKeep Plus (yearly, monthly, or lifetime) is handled entirely by Apple's App Store. ScrollKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
-    <p><strong>Children:</strong> ScrollKeep does not knowingly collect information from anyone, including children.</p>
-    <p class="muted">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
-    <p><strong>Contact:</strong> <a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a></p>
-  </div>
-
-  <p class="muted" style="margin-top:24px">ScrollKeep is a personal companion. It is not a medical device, does not provide medical advice, diagnosis, or treatment, and is not a substitute for professional help.</p>
+<p class="soft">Last updated: October 1, 2026</p>
+    <p>ScrollKeep does not collect, transmit, sell, or share any of your data. There is no account, no login, and no server.</p>
+    <h3>What we collect</h3>
+<p>Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests of its own. Because there is no backend, your data physically cannot reach us.</p>
+    <h3>Screen Time</h3>
+<p>ScrollKeep uses Apple's Screen Time framework (Family Controls) to shield the apps and websites you choose. Your choices are stored by Apple as opaque tokens that ScrollKeep cannot read, name, or export; they never leave your device. ScrollKeep does not read your usage history; the only records it keeps are the pledges, reaches, and notes you make in the app, on your device.</p>
+    <h3>Where your data lives</h3>
+<p>Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it.</p>
+    <h3>Notifications</h3>
+<p>If enabled, the morning and evening reminders are scheduled locally on your device and are not sent through any server.</p>
+    <h3>Face ID and the app lock</h3>
+<p>ScrollKeep does not collect, access, store, or share face data. The optional app lock (in ScrollKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells ScrollKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; ScrollKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in ScrollKeep's Settings, or switch off Face ID for ScrollKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because ScrollKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
+    <h3>Your person</h3>
+<p>If you add a contact for the SOS, the name and number stay on your device; a tap opens Messages with a blank text, and nothing is ever sent without you.</p>
+    <h3>In-app purchases</h3>
+<p>ScrollKeep Plus (yearly, monthly, or lifetime) is handled entirely by Apple's App Store. ScrollKeep never sees your payment details; Apple's own privacy policy applies to the transaction.</p>
+    <h3>Children</h3>
+<p>ScrollKeep does not knowingly collect information from anyone, including children.</p>
+    <p class="soft">Deutsch: <a href="datenschutz.html">Datenschutzerklärung</a></p>
+    <h3>Contact</h3>
+<p><a href="mailto:minieriapps+scrollkeep@gmail.com">minieriapps+scrollkeep@gmail.com</a></p>
+  <p class="soft">ScrollKeep is a personal companion. It is not a medical device, does not provide medical advice, diagnosis, or treatment, and is not a substitute for professional help.</p>
 
   <footer>© 2026 Nick Minieri · ScrollKeep</footer>
-</div>
+</main>
 </body>
 </html>

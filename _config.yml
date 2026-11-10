@@ -1,0 +1,6 @@
+# Site kit (2026-11): meta description, Open Graph tags and a sitemap, built by GitHub Pages.
+title: ScrollKeep
+author: Nick Minieri
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
