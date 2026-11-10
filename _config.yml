@@ -4,3 +4,10 @@ author: Nick Minieri
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Keep Google's ownership file out of the sitemap.
+defaults:
+  - scope:
+      path: "google822ed68b96addce9.html"
+    values:
+      sitemap: false
